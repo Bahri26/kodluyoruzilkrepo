@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resimler</title>
+</head>
+<body>
+    <h1>Resimler</h1>
+    <h2>PNG formatında Resimler</h2>
+    <img src="Resimler/Besiktas.png" height="100" weight="200" alt="besiktas">
+    <h2>Jpeg formatında Resimler</h2>
+    <img src="Resimler/Besiktas.jpg" height="100" weight="200" alt="besiktas">
+    <h2>Svg formatında Resimler</h2>
+    <img src="Resimler/besiktas.svg" height="100" weight="200" alt="besiktas">
+    <h2>Script ile Resim Yükleme</h2>
+    <img src="Resimler/sergen.jpg" onload="imageUpload()" height="200" weight="400" alt="sergen">
+    <script>
+        function imageUpload(){
+            alert("resim yüklendi");
+        }
+    </script>
+    <h3>Picture etiketi ile resim yükleme</h3>
+    <picture>
+        <source srcset="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png" media="(min-width: 800px)">
+        
+        <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+    </picture>
+</body>
+</html>
